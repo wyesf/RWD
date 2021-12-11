@@ -10,6 +10,11 @@ header#hd {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #f1f1f1;
+  padding: 1vw 0;
+}
+
+header#hd > * {
+  margin: 0 2vw;
 }
 
 header#hd a {
@@ -69,6 +74,8 @@ header#hd h1 a img {
 
 #gnb li a.depth1 {
   font-size: 1.6em;
+  display: block;
+  padding: 0 2em;
 }
 
 #gnb li .depth2 {
