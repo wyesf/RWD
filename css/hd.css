@@ -43,4 +43,33 @@ header#hd h1 a img {
   display: block;
   width: 100%;
 }
+
+#gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#gnb li {
+  position: relative;
+}
+
+#gnb li a.depth1 {
+  font-size: 1.6em;
+}
+
+#gnb li .depth2 {
+  position: absolute;
+  display: none;
+}
+
+#searchWrap .searchWbox {
+  display: none;
+}
 /*# sourceMappingURL=hd.css.map */

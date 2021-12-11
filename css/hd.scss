@@ -45,3 +45,44 @@ header#hd{
         }
     }
 }
+
+//gnb
+// id로 시작하는 애들은 밖으로 빼도 됨
+#gnb{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    li{
+        position: relative;
+        a.depth1{
+            font-size: 1.6em;
+        }
+        .depth2{
+            position: absolute;
+            display: none;
+            ul{
+                li{
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//상단 오른쪽 검색버튼과 검색레이어
+#searchWrap{
+    .search_icon{
+        
+    }
+    .searchWbox{
+        display: none;
+        input{
+
+        }
+        .b_search_icon{
+
+        }
+    }
+}
