@@ -6,6 +6,9 @@ header#hd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #f1f1f1;
 }
 
@@ -16,6 +19,7 @@ header#hd a {
 header#hd #allMenu button {
   width: 30px;
   background-color: transparent;
+  display: block;
 }
 
 header#hd #allMenu button span, header#hd #allMenu button:after, header#hd #allMenu button:before {
@@ -48,6 +52,9 @@ header#hd h1 a img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -67,6 +74,12 @@ header#hd h1 a img {
 #gnb li .depth2 {
   position: absolute;
   display: none;
+}
+
+#searchWrap .search_icon {
+  width: 35px;
+  height: 35px;
+  background: url(../img/i_search_white.svg) transparent no-repeat;
 }
 
 #searchWrap .searchWbox {

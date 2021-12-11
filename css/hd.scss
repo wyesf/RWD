@@ -3,6 +3,7 @@ body{
 }
 header#hd{
     display: flex;
+    align-items: center;
     border-bottom: 1px solid #f1f1f1;
     a{
         color: white;
@@ -11,6 +12,7 @@ header#hd{
         button{
             width: 30px;
             background-color: transparent;
+            display: block; //버튼은 수평정렬이기 때문에 아래 미세한 여백이 있으므로 디스플레이 블록 넣어줌
             // & > *{ //나(&)의 자식들(*) 모두
             //     display: block;
             //     height: 2px;
@@ -50,6 +52,7 @@ header#hd{
 // id로 시작하는 애들은 밖으로 빼도 됨
 #gnb{
     display: flex;
+    align-items: center;
     flex-grow: 1;
     justify-content: center;
     li{
@@ -74,7 +77,9 @@ header#hd{
 //상단 오른쪽 검색버튼과 검색레이어
 #searchWrap{
     .search_icon{
-        
+        width: 35px;
+        height: 35px;
+        background: url(../img/i_search_white.svg) transparent no-repeat;
     }
     .searchWbox{
         display: none;
