@@ -65,14 +65,29 @@ header#hd{
             font-size: 1.6em;
             display: block;
             padding: 0 2em;
+            z-index: 1000;
+            position: relative;
+            background-color: black;
+        }
+        &:hover .depth2{
+            transform: translateY(0);
         }
         .depth2{
             position: absolute;
-            display: none;
+            left: 0;
+            top: 53px;
+            display: block;
+            background: white;
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 2em;
+            border-top: 0;
+            transform: translateY(-100%); //자신의 높이만큼 올라가기
+            transition: 0.5s;
             ul{
                 li{
                     a{
-
+                        color: #222;
                     }
                 }
             }

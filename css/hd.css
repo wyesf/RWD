@@ -76,11 +76,34 @@ header#hd h1 a img {
   font-size: 1.6em;
   display: block;
   padding: 0 2em;
+  z-index: 1000;
+  position: relative;
+  background-color: black;
+}
+
+#gnb li:hover .depth2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 #gnb li .depth2 {
   position: absolute;
-  display: none;
+  left: 0;
+  top: 53px;
+  display: block;
+  background: white;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 2em;
+  border-top: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#gnb li .depth2 ul li a {
+  color: #222;
 }
 
 #searchWrap .search_icon {
