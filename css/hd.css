@@ -10,7 +10,6 @@ header#hd {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #f1f1f1;
-  padding: 1vw 0;
 }
 
 header#hd > * {
@@ -89,7 +88,7 @@ header#hd h1 a img {
 #gnb li .depth2 {
   position: absolute;
   left: 0;
-  top: 53px;
+  top: 100%;
   display: block;
   background: white;
   width: 100%;
